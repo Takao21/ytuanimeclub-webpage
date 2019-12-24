@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Anime Club at Yangon Technological University">
+  <meta name="keywords" content="ytuac animeclub ytu">
+  <meta name="author" content="Aung Kaung Khant">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/layout.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <title>YTU Anime Club</title>
+</head>
+
+<body>
+  <!-- loading animation -->
+  <div class="se-pre-con"></div>
+
+  <div class="" id="welcome_section">
+    <img src="./storage/img/oregairu-wallpaper.jpg" alt="welcome image">
+    <h1 class="movingletter">
+      <span class="text-wrapper">
+        <span class="letters">welcome</span>
+        <span class="letters">to</span>
+        <span class="letters">anime</span>
+        <span class="letters">club</span>
+
+      </span><br>
+      <span class="welcome_moral">Let's all have fun together.</span><br>
+      <span class="startbtn">Get Started</span>
+    </h1>
+    <span class="dateNtime" id="dateDisplay"></span><br>
+    <marquee direction="right" width="100px" scrolldelay="300"><img id="padoru" src="./storage/img/padoru.png" alt="padoru easter egg"></marquee>
+  </div>
+
+  <div class="content-section" id="contents">
+    <nav>
+      <span class="navitem logo"><img src="./storage/img/ytuac-logo.png" alt="club logo"></span>
+      <span class="navitem navbtn" onclick="changeActive(1)">
+        <p>About</p>
+      </span>
+      <span class="navitem navbtn" onclick="changeActive(2)">
+        <p>Membership</p>
+      </span>
+      <span class="navitem navbtn" onclick="changeActive(3)">
+        <p>Round Table</p>
+      </span>
+      <span class="navitem navbtn" onclick="changeActive(4)">
+        <p>Webmaster</p>
+      </span>
+    </nav>
+    <div class="content active" id="about">
+      <h2 class="title">ABOUT</h2>
+      <hr> <br>
+      <p><span>Founded: </span>(Christmas) Dec 25, 2017.</p> <br> <br>
+      <p class="textbody">Anime club was started by five anime enthusiast students with the purpose of introducing the anime and manga culture to university students. Plus, they wanted to share the fun times together with people of the same interest.
+      </p>
+    </div>
+    <div class="content" id="membership">
+      <h2 class="title">MEMBERSHIP</h2>
+      <hr> <br>
+      <p>If you are interested in becoming a member, please contact the current club members or the <a href="https://facebook.com/ytuanimeclub/" target="_blank">Facebook Page</a>. You will be given a membership form to register. Please read and fill
+        it out carefully and submit it to an available round table member.</p> <br> <br>
+      <ul>
+        <li>We will take a fraction of your memory... Just Kidding!</li>
+        <li>You have to be an active YTU Student to join.</li>
+        <li>You may have to stick a photo of yourself in the registration form.</li>
+        <li>A small amount of club fund will be collected each academic month so that we can organize events together. (Currently: 2000 KS)</li>
+      </ul>
+    </div>
+    <div class="content" id="roundtable">
+      <h2 class="title">ROUND TABLES</h2>
+      <hr> <br>
+      <p>The following are the round table members of the last 10 academic years. You also have the chance to be a part of the Round Table no matter what Year you are from, as long as you are a member of the club!</p>
+      <div class="yearlyDiv">
+        <h3>2019-2020</h3>
+        <ul>
+          <li>President: MG San Aung</li>
+          <li>Vice President: MA Win Pyae Pyae Aung</li>
+          <li>Advisor: MA Su Sande Oo</li>
+        </ul>
+      </div>
+      <div class="yearlyDiv">
+        <h3>2018-2019</h3>
+        <ul>
+          <li>President: MG Lu Zaw Khin</li>
+          <li>Vice President: MA Win Pyae Pyae Aung</li>
+          <li>Advisor: MA Su Sande Oo</li>
+        </ul>
+      </div>
+      <div class="yearlyDiv">
+        <h3>2017-2018</h3>
+        <ul>
+          <li>President: MG Aung Kaung Khant</li>
+          <li>Vice President: MG Myo Min Naing</li>
+          <li>Treasurer: MA Mai Teresa Khin</li>
+          <li>Organizer: MA Su Sande Oo</li>
+          <li>Organizer: MG Myat Khaung</li>
+        </ul>
+      </div>
+    </div>
+    <div class="content" id="webmaster">
+      <h2>WEBMASTER</h2>
+      <hr> <br>
+      <p>This webpage is developed by the following person.</p>
+      <form class="" action="" method="">
+        <fieldset>
+          <legend>Contact Information</legend>
+          <p>Name: Aung Kaung Khant (or) Takao</p>
+          <p>Occupation: (Front-end Developer, Freelancer)</p>
+          <p class="copyOK">Phone: 09-95-550-1280</p>
+          <br>
+          <p class="socialTitle">Social Media:</p> <br>
+          <a href="https://facebook.com/ayanokoji.akk/" target="_blank"><i class='fab fa-facebook'></i></a>
+          <a href="https://www.linkedin.com/in/aung-kaung-khant-67039a158/" target="_blank"><i class='fab fa-linkedin'></i></a>
+        </fieldset>
+      </form>
+      <p>Images used under Fair Use Law in this website belong to:</p> <br>
+      <span id="revealBtn" onclick="reveal();">Need to view them?</span>
+      <ul class="credits">
+        <li>https://www.larutadelsorigens.cat/filelook/full/122/1222133/oregairu-wallpaper.jpg</li>
+        <li>https://s2.best-wallpaper.net/wallpaper/3840x2160/1809/Your-Name-beautiful-sky-meteor-anime_3840x2160.jpg</li>
+        <li>https://vignette.wikia.nocookie.net/swordartonline/images/2/2c/Quinella.png/revision/latest?cb=20161010043828</li>
+        <li>https://wallpaperplay.com/walls/full/f/6/e/326425.jpg</li>
+        <li>https://i.pinimg.com/originals/ae/df/1c/aedf1c515b3ded75c0376e349b9ff7b1.jpg</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footerDeco"></div>
+  <footer>
+    &copy; Anime Club of Yangon Technological University, 2019 <br> Image Credits in Webmaster Section
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  <script type="text/javascript" src="./scripts/loading.js"></script>
+  <!-- <script type="text/javascript" src="./scripts/welcomeAnimation.js"></script> -->
+  <script type="text/javascript" src="./scripts/startBtn.js"></script>
+  <script type="text/javascript" src="./scripts/contentSwitch.js"></script>
+</body>
+
+</html>
