@@ -1,3 +1,5 @@
+An informative webpage developed for YTUAC.
+
 - Developer Name: Takao a.k.a Aung Kaung Khant
 
 - Project Name: YTU Anime Club Webpage
